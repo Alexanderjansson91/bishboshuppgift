@@ -1,6 +1,6 @@
 function myFunction2() {
 
-    var x = document.getElementById("frm1"); // Läser in dom valda talen
+    var x = document.getElementById("form1"); // Läser in dom valda talen
     var loopValue = x.elements[0].value; //variabel till värden
     var division1 = x.elements[1].value;//skapar variabel till Bisch
     var division2 = x.elements[2].value;//skapar varibel till Bosch

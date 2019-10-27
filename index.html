@@ -6,7 +6,7 @@
     <title>Bish-Bosh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="bischbosch.js"></script>
+    <script src="index.js"></script>
     </meta>
 </head>
             <header>
@@ -14,7 +14,7 @@
             </header>
 <body>
     <div id="container">
-        <form id="frm1" action="form_action.asp">
+        <form id="form1" action="form_action.asp">
             Välj en siffra max 100<br><br> <br> Antal <br>
             <Section class="slidecontainer"> <!-- Slidebar för antal-->
                     <input type="range" class="slider" name="loopValue" id="antal" value="50" min="1" max="100" 
@@ -29,7 +29,7 @@
                     <br>
                     <br>
                     <br> Bosch valet<br> <!-- Slidebar för bosch-->
-                    <input type="range" class="slider" name="division2" id="borange" value="5" min="1" max="100" 
+                    <input type="range" class="slider" name="division2" id="borange" value="7" min="1" max="100" 
                         oninput="document.getElementById('boschrange').innerHTML = this.value" />
                     <label id="boschrange"></label>
                     <br>
