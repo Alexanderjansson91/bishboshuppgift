@@ -1,24 +1,24 @@
 function myFunction2() {
 
     var x = document.getElementById("form1"); // Läser in dom valda talen
-    var loopValue = x.elements[0].value; //variabel till värden
-    var division1 = x.elements[1].value;//skapar variabel till Bisch
-    var division2 = x.elements[2].value;//skapar varibel till Bosch
+    var loopvärde = x.elements[0].value; //variabel till värden
+    var bish1 = x.elements[1].value;//skapar variabel till Bisch
+    var bosh2 = x.elements[2].value;//skapar varibel till Bosch
     var text=""; 
     var i;
-    for (i = 1; i <= loopValue; i++) {   //skapar en for loop av värderna
+    for (i = 1; i <= loopvärde; i++) {   //skapar en for loop av värderna
 
         //  Skriver ut när siffran är både bisch och borsch
-        if (i % division1 == 0 && i % division2 == 0) { 
+        if (i % bish1 == 0 && i % bosh2 == 0) { 
 
           text += "Bisch-Bosch" + ", "; 
 
           // Skriver ut när siffran är ett bisch tal
-        } else if (i % division1 == 0) { 
+        } else if (i % bish1 == 0) { 
             text+="Bisch" + ", "; 
           
         //  Skriver ut när siffran är ett Bosch tal
-        } else if (i % division2 == 0) { 
+        } else if (i % bosh2 == 0) { 
             text+="Bosch" + ", "; 
 
 
