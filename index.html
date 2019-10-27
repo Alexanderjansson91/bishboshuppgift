@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bish-Bosh 2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="bischbosch.js"></script>
+    </meta>
+</head>
+            <header>
+                <h1>Bish-Bosh</h1><!-- Rubrik-->
+            </header>
+<body>
+    <div id="container">
+        <form id="frm1" action="form_action.asp">
+            Välj en siffra max 100<br><br> <br> Antal <br>
+            <Section class="slidecontainer"> <!-- Slidebar för antal-->
+                    <input type="range" class="slider" name="loopValue" id="antal" value="50" min="1" max="100" 
+                        oninput="document.getElementById('antalBB').innerHTML = this.value" />
+                    <label id="antalBB"></label>
+                    <br>
+                    <br>
+                    <br> Bisch valet<br> <!-- Slidebar för bisch-->
+                    <input type="range" class="slider" name="division1" id="brange" value="5" min="1" max="100" 
+                        oninput="document.getElementById('bischrange').innerHTML = this.value" />
+                    <label id="bischrange"></label>
+                    <br>
+                    <br>
+                    <br> Bosch valet<br> <!-- Slidebar för bosch-->
+                    <input type="range" class="slider" name="division2" id="borange" value="5" min="1" max="100" 
+                        oninput="document.getElementById('boschrange').innerHTML = this.value" />
+                    <label id="boschrange"></label>
+                    <br>
+                    <br> 
+            </section>
+        </form>
+        <!-- Se resultat knapp-->
+        <button onmouseover="scaleUp(this,'14px')" onmouseout="scaleUp(this,'12px')" class="submit" onclick="myFunction2()">Se resultat</button>
+        <p id="demo"></p>
+    </div>
+</body>
+</html>
